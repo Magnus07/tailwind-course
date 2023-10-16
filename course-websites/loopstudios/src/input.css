@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    .btn {
+        @apply py-2 px-10 border-2 tracking-widest uppercase font-bold font-alata border-black hover:bg-black hover:text-white;
+    }
+}
+
+.item-container{
+    @apply relative overflow-hidden;
+}
+
+.item-desktop-image{
+    @apply hidden md:block w-full duration-200;
+}
+
+.item-gradient{
+    @apply bg-gradient-to-b from-transparent to-gray-900 absolute top-0 bottom-0 left-0 right-0;
+}
+
+.item-text{
+    @apply absolute bottom-4 left-6 text-white md:w-36 duration-200 text-2xl md:left-10 md:bottom-8 uppercase;
+}
+
+#hero {
+    background-image: url(../../all-project-assets/loopstudios/images/desktop/image-hero.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+@media (max-width: 576px) {
+    #hero {
+        background-image: url(../../all-project-assets/loopstudios/images/mobile/image-hero.jpg);
+        background-position:center;
+    }
+}
+
+.hamburger {
+    cursor:pointer;
+    width: 24px;
+    height: 24px;
+    transition: all 0.25s;
+    position: relative;
+}
+
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom {
+    position: absolute;
+    width: 24px;
+    height: 2px;
+    top:0;
+    left: 0;
+    background: #fff;
+    transform: rotate(0);
+    transition: all 0.5s;
+}
+
+.hamburger-middle{
+    transform: translateY(7px);
+}
+
+.hamburger-bottom{
+    transform: translateY(14px);
+}
+
+.open{
+    transform: rotate(90deg);
+}
+
+.open .hamburger-top{
+    transform: rotate(45deg) translateY(6px) translateX(6px);
+}
+
+.open .hamburger-middle{
+    display: none;
+}
+
+.open .hamburger-bottom{
+    transform: rotate(-45deg) translateY(6px) translateX(-6px);
+}

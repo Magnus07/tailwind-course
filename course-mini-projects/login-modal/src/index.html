@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login modal</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700&family=Rokkitt:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../dist/output.css" />
+  </head>
+  <body>
+    <div class="flex justify-center items-center bg-rose-50 min-h-screen">
+      <div
+        class="bg-white flex flex-col md:flex-row relative rounded-2xl shadow-2xl"
+      >
+        <div class="flex flex-col p-6 md:p-20">
+          <div class="space-y-5">
+            <h2 class="font-bold text-4xl font-mono">Log In</h2>
+            <h4 class="max-w-sm text-slate-600 font-light">
+              Log in to your account to upload or download pictures, videos or
+              music.
+            </h4>
+          </div>
+          <input
+            type="text"
+            placeholder="Enter your email address"
+            class="p-6 border border-slate-300 placeholder:text-slate-400 text-md rounded-md mt-12 font-light"
+          />
+          <div
+            class="flex flex-col md:flex-row justify-between items-center mt-6 space-y-6 md:space-y-0"
+          >
+            <a href="#" class="text-cyan-700 text-md font-light"
+              >Forgot password</a
+            >
+            <button
+              class="bg-cyan-700 p-6 text-white text-md rounded-md flex flex-row justify-center space-x-4 w-full items-center font-sans font-bold md:w-auto px-9 border hover:shadow-xl hover:opacity-80 duration-200 hover:-translate-y-0.5"
+            >
+              <span>Next</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-7"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="#ffffff"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <line x1="5" y1="12" x2="19" y2="12" />
+                <line x1="13" y1="18" x2="19" y2="12" />
+                <line x1="13" y1="6" x2="19" y2="12" />
+              </svg>
+            </button>
+          </div>
+          <hr class="mt-12 border-slate-300" />
+          <p class="text-center text-sm text-slate-400 font-light mt-6">
+            or log in with
+          </p>
+          <div
+            class="flex flex-col md:flex-row space-y-6 md:space-y-0 justify-between mt-6 md:space-x-4"
+          >
+            <button
+              class="flex flex-row space-x-3 text-black bg-white border rounded-sm border-slate-300 items-center justify-center py-2 font-light flex-1 hover:shadow-lg hover:-translate-y-0.5 duration-200"
+            >
+              <img
+                src="../../all-project-assets/login-modal/images/facebook.png"
+                alt="facebook"
+                class="w-9"
+              />
+              <span>Facebook</span>
+            </button>
+            <button
+              class="flex flex-row space-x-3 text-black bg-white border rounded-sm border-slate-300 items-center justify-center py-2 font-light flex-1 hover:shadow-lg hover:-translate-y-0.5 duration-200"
+            >
+              <img
+                src="../../all-project-assets/login-modal/images/google.png"
+                alt="google"
+                class="w-9"
+              />
+              <span>Google</span>
+            </button>
+          </div>
+        </div>
+        <img
+          src="../../all-project-assets/login-modal/images/image.jpg"
+          alt=""
+          class="hidden md:block w-[430px]"
+        />
+        <div
+          class="bg-slate-200 rounded-full h-10 w-10 absolute flex justify-center items-center top-5 right-4 hover:opacity-80 hover:-translate-y-0.5 cursor-pointer duration-200 md:bg-white md:top-4 md:hover:opacity-100"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="w-6 h-6 text-black group-hover:text-gray-600"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

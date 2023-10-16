@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookmark</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- <link rel="stylesheet" href="css/style.css" /> -->
+    <script src="js/script.js" defer></script>
+    <link rel="stylesheet" href="../dist/output.css" />
+  </head>
+  <body class="overflow-x-hidden">
+    <header class="container mx-auto">
+      <nav class="flex justify-between items-center px-6 py-12">
+        <div class="z-30">
+          <img
+            src="../../all-project-assets/bookmark/images/logo-bookmark.svg"
+            alt="logo"
+            id="logo"
+          />
+        </div>
+        <div class="hidden md:flex space-x-10 items-center">
+          <a
+            href="#features"
+            class="text-grayishBlue tracking-widest hover:text-softRed uppercase"
+            >features</a
+          >
+          <a
+            href="#download"
+            class="text-grayishBlue hover:text-softRed uppercase tracking-widest"
+            >download</a
+          >
+          <a
+            href="#faq"
+            class="text-grayishBlue hover:text-softRed uppercase tracking-widest"
+            >faq</a
+          >
+          <a
+            href="#"
+            class="px-8 py-2 bg-softRed text-white uppercase text-base border-2 border-softRed hover:bg-white hover:text-softRed rounded-lg shadow-md"
+            >Login</a
+          >
+        </div>
+        <button
+          id="menu-btn"
+          class="z-30 block md:hidden focus:outline-none hamburger"
+        >
+          <span class="hamburger-top"></span>
+          <span class="hamburger-middle"></span>
+          <span class="hamburger-bottom"></span>
+        </button>
+      </nav>
+      <div
+        id="menu"
+        class="hidden fixed bg-veryDarkBlue opacity-90 p-6 inset-0 z-20"
+      >
+        <div
+          class="flex flex-col text-white uppercase text-center tracking-widest mt-[4.5rem] divide-y divide-gray-500 space-y-3"
+        >
+          <a href="#features" class="pt-3 hover:text-softRed">features</a>
+          <a href="#download" class="pt-3 hover:text-softRed">download</a>
+          <a href="#faq" class="pt-3 hover:text-softRed">faq</a>
+          <a href="#" class="pt-3 hover:text-softRed">login</a>
+        </div>
+      </div>
+    </header>
+
+    <section id="hero">
+      <div class="container mx-auto px-6 mt-6">
+        <div class="flex lg:flex-row flex-col-reverse space-y-0 md:space-y-0">
+          <div
+            class="flex flex-col space-y-10 text-center lg:text-start lg:w-1/2 lg:pt-16"
+          >
+            <h1 class="font-semibold text-3xl capitalize lg:text-6xl">
+              A Simple Bookmark Manager
+            </h1>
+            <p
+              class="text-semibold text-gray-400 text-lg max-w-md mx-auto lg:text-2xl lg:max-w-md lg:mx-0"
+            >
+              A clean and simple interface to organize your favourite websites.
+              Open a new browser tab and see your sites load instantly. Try it
+              for free.
+            </p>
+            <div class="flex space-x-4 justify-center lg:justify-start">
+              <a
+                href="#"
+                class="text-white bg-softBlue hover:text-softBlue p-4 border-softBlue rounded-md font-semibold text-sm border-2 hover:bg-white capitalize shadow-md md:text-base"
+                >Get it on chrome</a
+              >
+              <a
+                href="#"
+                class="text-black bg-gray-300 hover:text-gray-700 p-4 border-gray-300 rounded-md font-semibold text-sm border-2 hover:bg-white capitalize shadow-md md:text-base"
+                >Get it on firefox</a
+              >
+            </div>
+          </div>
+          <div class="mx-auto lg:w-1/2 relative">
+            <div class="bg-hero"></div>
+
+            <img
+              src="../../all-project-assets/bookmark/images/illustration-hero.svg"
+              alt="hero"
+              class="block lg:absolute top-24 xl:top-0 z-10"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="features">
+      <div class="container mx-auto py-20 lg:py-20 px-5 md:px-0">
+        <h1 class="font-semibold text-4xl capitalize text-center mt-2">
+          features
+        </h1>
+        <p class="text-grayishBlue max-w-md text-center mx-auto mt-6">
+          Our aim is to make it quick and easy for you to access your favourite
+          websites. Your bookmarks sync between your devices so you can access
+          them on the go.
+        </p>
+        <div
+          class="flex flex-col space-y-5 mt-[4.25rem] md:space-y-0 md:flex-row items-center md:items-start max-w-2xl mx-auto md:px-7"
+        >
+          <div
+            class="group cursor-pointer border-b mx-auto w-full tab"
+            data-target="panel-1"
+          >
+            <div class="flex items-center flex-col">
+              <a
+                href="#"
+                class="text-gray-600 capitalize group-hover:text-softRed"
+                data-target="panel-1"
+                >simple bookmarking
+                <div class="h-1 bg-red-500 w-full mt-5 under-line"></div>
+              </a>
+            </div>
+          </div>
+          <div
+            class="group cursor-pointer border-b mx-auto w-full tab"
+            data-target="panel-2"
+          >
+            <div class="flex items-center flex-col justify-end">
+              <a
+                href="#"
+                class="text-gray-600 capitalize group-hover:text-softRed"
+                data-target="panel-2"
+                >Speedy Searching
+                <div
+                  class="h-1 bg-transparent w-full mt-4 md:mt-5 under-line"
+                ></div>
+              </a>
+            </div>
+          </div>
+          <div
+            class="group cursor-pointer border-b mx-auto w-full tab"
+            data-target="panel-3"
+          >
+            <div class="flex items-center flex-col">
+              <a
+                href="#"
+                class="text-gray-600 capitalize group-hover:text-softRed"
+                data-target="panel-3"
+                >Easy Sharing
+                <div
+                  class="h-1 bg-transparent w-full mt-4 md:mt-5 under-line"
+                ></div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <section id="feature-1" class="feature">
+          <div
+            class="relative mt-11 flex flex-col md:flex-row space-y-8 md:space-y-0 md:space-x-7 px-1 md:px-6 h-full"
+          >
+            <div class="md:w-1/2 flex justify-center">
+              <img
+                src="../../all-project-assets/bookmark/images/illustration-features-tab-1.svg"
+                alt="feature"
+                class="h-full"
+              />
+              <div class="bg-tabs -z-10"></div>
+            </div>
+
+            <div
+              class="flex flex-col text-center md:w-1/2 md:text-start items-center md:items-start"
+            >
+              <h3 class="font-semibold text-3xl">Bookmark in one click</h3>
+              <p
+                class="mt-8 text-gray-400 mb-[1.35rem] md:mb-[3.1rem] max-w-md"
+              >
+                Organize your bookmarks however you like. Our simple
+                drag-and-drop interface gives you complete control over how you
+                manage your favourite sites.
+              </p>
+              <button
+                href="#"
+                class="text-white font-semibold capitalize py-[0.475rem] md:py-2.5 w-[7.6rem] text-center text-base bg-softBlue border-softBlue border-2 rounded-md hover:bg-white hover:text-softBlue md:ml-0.5"
+              >
+                more info
+              </button>
+            </div>
+          </div>
+        </section>
+        <section id="feature-2" class="feature hidden">
+          <div
+            class="relative mt-11 flex flex-col md:flex-row space-y-8 md:space-y-0 md:space-x-7 px-1 md:px-6 h-full"
+          >
+            <div class="md:w-1/2 flex justify-center">
+              <img
+                src="../../all-project-assets/bookmark/images/illustration-features-tab-2.svg"
+                alt="feature"
+                class="h-full"
+              />
+              <div class="bg-tabs -z-10"></div>
+            </div>
+
+            <div
+              class="flex flex-col text-center md:w-1/2 md:text-start items-center md:items-start"
+            >
+              <h3 class="font-semibold text-3xl">Intelligent search</h3>
+              <p
+                class="mt-8 text-gray-400 mb-[1.35rem] md:mb-[3.2rem] max-w-md"
+              >
+                Our powerful search feature will help you find saved sites in no
+                time at all. No need to trawl through all of your bookmarks.
+              </p>
+              <button
+                href="#"
+                class="text-white font-semibold capitalize py-[0.475rem] md:py-2.5 w-[7.6rem] text-center text-base bg-softBlue border-softBlue border-2 rounded-md hover:bg-white hover:text-softBlue md:ml-0.5"
+              >
+                more info
+              </button>
+            </div>
+          </div>
+        </section>
+        <section id="feature-3" class="feature hidden">
+          <div
+            class="relative mt-11 flex flex-col md:flex-row space-y-8 md:space-y-0 md:space-x-7 px-1 md:px-6 h-full"
+          >
+            <div class="md:w-1/2 flex justify-center">
+              <img
+                src="../../all-project-assets/bookmark/images/illustration-features-tab-3.svg"
+                alt="feature"
+                class="h-full"
+              />
+              <div class="bg-tabs -z-10"></div>
+            </div>
+
+            <div
+              class="flex flex-col text-center md:w-1/2 md:text-start items-center md:items-start"
+            >
+              <h3 class="font-semibold text-3xl">Share your bookmarks</h3>
+              <p
+                class="mt-8 text-gray-400 mb-[1.35rem] md:mb-[3.2rem] max-w-md"
+              >
+                Easily share your bookmarks and collections with others. Create
+                a shareable a link that you can send at the click of a button.
+              </p>
+              <button
+                href="#"
+                class="text-white font-semibold capitalize py-[0.475rem] md:py-2.5 w-[7.6rem] text-center text-base bg-softBlue border-softBlue border-2 rounded-md hover:bg-white hover:text-softBlue md:ml-0.5"
+              >
+                more info
+              </button>
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <section id="download">
+      <div class="container mx-auto pt-[3.25rem] lg:py-20 px-5 md:px-0">
+        <h1
+          class="font-semibold text-3xl md:text-4xl text-center mt-2 md:mt-[1.3rem]"
+        >
+          Download the extension
+        </h1>
+        <p class="text-grayishBlue max-w-lg text-center mx-auto mt-6">
+          We've got more browsers in the pipeline. Please do let us know if
+          you've got a favourite you'd like us to prioritize.
+        </p>
+      </div>
+      <div class="mx-auto px-[1.4rem] md:px-5">
+        <div
+          class="flex flex-col space-y-16 md:space-y-0 md:flex-row px-[1.1rem] md:px-1 pt-[9.5rem] md:space-x-7 md:mt-8 lg:pt-16 xl:pt-[4.5rem] max-w-5xl lg:px-6 mx-auto"
+        >
+          <div class="md:w-1/3">
+            <div
+              class="rounded-lg shadow-lg flex flex-col space-y-4 items-center"
+            >
+              <img
+                src="../../all-project-assets/bookmark/images/logo-chrome.svg"
+                alt="chrome logo"
+                class="w-26"
+              />
+
+              <h4 class="font-bold text-xl pt-6">Add to Chrome</h4>
+              <h4 class="text-gray-400 text-base">Minimum Version 62</h4>
+              <div class="bg-dots bg-repeat-x w-full h-1"></div>
+              <div class="px-6 w-full pt-1 pb-6">
+                <button
+                  href="#"
+                  class="py-3.5 bg-softBlue text-white capitalize w-full text-center rounded-lg"
+                >
+                  add & install extension
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="md:pt-4 md:w-1/3">
+            <div
+              class="rounded-lg shadow-lg flex flex-col space-y-4 items-center"
+            >
+              <img
+                src="../../all-project-assets/bookmark/images/logo-firefox.svg"
+                alt="firefox logo"
+                class="w-26"
+              />
+
+              <h4 class="font-bold text-xl pt-6">Add to Firefox</h4>
+              <h4 class="text-gray-400 text-base">Minimum Version 55</h4>
+              <div class="bg-dots bg-repeat-x w-full h-1"></div>
+              <div class="px-6 w-full pt-1 pb-6">
+                <button
+                  href="#"
+                  class="py-3.5 bg-softBlue text-white capitalize w-full text-center rounded-lg"
+                >
+                  add & install extension
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="md:pt-8 md:w-1/3">
+            <div
+              class="rounded-lg shadow-lg flex flex-col space-y-4 items-center"
+            >
+              <img
+                src="../../all-project-assets/bookmark/images/logo-opera.svg"
+                alt="opera logo"
+                class="w-26"
+              />
+
+              <h4 class="font-bold text-xl pt-6">Add to Opera</h4>
+              <h4 class="text-gray-400 text-base">Minimum Version 46</h4>
+              <div class="bg-dots bg-repeat-x w-full h-1"></div>
+              <div class="px-6 w-full pt-1 pb-6">
+                <button
+                  href="#"
+                  class="py-3.5 bg-softBlue text-white capitalize w-full text-center rounded-lg"
+                >
+                  add & install extension
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq">
+      <div class="container max-w-2xl text-center mx-auto mt-32">
+        <h2 class="capitalize text-3xl md:text-4xl font-semibold">
+          Frequently Asked Questions
+        </h2>
+        <p
+          class="text-md text-grayishBlue max-w-md text-center mx-auto mt-6 px-2 md:px-0"
+        >
+          Here are some of our FAQs. If you have any other questions you'd like
+          answered please feel free to email us.
+        </p>
+      </div>
+    </section>
+
+    <section id="faq-accordion">
+      <div
+        class="container max-w-[30.4rem] md:max-w-2xl mx-auto px-[1.66rem] md:px-0 mt-12 mb-32"
+      >
+        <div class="flex flex-col space-y-4">
+          <!-- Tab 1 -->
+          <div class="group border-b border-gray-200" tabindex="1">
+            <div class="flex justify-between cursor-pointer items-center">
+              <div
+                class="text-gray-500 text-base group-hover:text-softRed duration-500"
+              >
+                What is Bookmark?
+              </div>
+              <div
+                class="group-focus:rotate-180 group-focus:text-softRed text-gray-500 transition-all duration-500"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12">
+                  <path
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="3"
+                    d="M1 1l8 8 8-8"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+            <div
+              class="overflow-hidden max-h-0 group-focus:max-h-screen mt-4 group-focus:mt-5 text-justify group-focus:pb-3"
+            >
+              <p class="text-gray-400">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat,
+                repellat amet doloribus consequuntur eos similique provident
+                tempora voluptates iure quia fuga dicta voluptatibus culpa
+                mollitia recusandae delectus id suscipit labore?
+              </p>
+            </div>
+          </div>
+
+          <!-- Tab 2 -->
+          <div class="group border-b border-gray-200" tabindex="1">
+            <div class="flex justify-between cursor-pointer items-center">
+              <div
+                class="text-gray-500 text-base group-hover:text-softRed duration-500"
+              >
+                How can I request a new browser?
+              </div>
+              <div
+                class="group-focus:rotate-180 group-focus:text-softRed text-gray-500 transition-all duration-500"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12">
+                  <path
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="3"
+                    d="M1 1l8 8 8-8"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+            <div
+              class="overflow-hidden max-h-0 group-focus:max-h-screen mt-4 group-focus:mt-5 text-justify group-focus:pb-3"
+            >
+              <p class="text-gray-400">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat,
+                repellat amet doloribus consequuntur eos similique provident
+                tempora voluptates iure quia fuga dicta voluptatibus culpa
+                mollitia recusandae delectus id suscipit labore?
+              </p>
+            </div>
+          </div>
+          <!-- Tab 3 -->
+          <div class="group border-b border-gray-200" tabindex="1">
+            <div class="flex justify-between cursor-pointer items-center">
+              <div
+                class="text-gray-500 text-base group-hover:text-softRed duration-500"
+              >
+                Is there a mobile app?
+              </div>
+              <div
+                class="group-focus:rotate-180 group-focus:text-softRed text-gray-500 transition-all duration-500"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12">
+                  <path
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="3"
+                    d="M1 1l8 8 8-8"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+            <div
+              class="overflow-hidden max-h-0 group-focus:max-h-screen mt-4 group-focus:mt-5 text-justify group-focus:pb-3"
+            >
+              <p class="text-gray-400">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat,
+                repellat amet doloribus consequuntur eos similique provident
+                tempora voluptates iure quia fuga dicta voluptatibus culpa
+                mollitia recusandae delectus id suscipit labore?
+              </p>
+            </div>
+          </div>
+          <!-- Tab 4 -->
+          <div class="group border-b border-gray-200" tabindex="1">
+            <div class="flex justify-between cursor-pointer items-center">
+              <div
+                class="text-gray-500 text-base group-hover:text-softRed duration-500"
+              >
+                What about other Chromium browsers?
+              </div>
+              <div
+                class="group-focus:rotate-180 group-focus:text-softRed text-gray-500 transition-all duration-500"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12">
+                  <path
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="3"
+                    d="M1 1l8 8 8-8"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+            <div
+              class="overflow-hidden max-h-0 group-focus:max-h-screen mt-4 group-focus:mt-5 text-justify group-focus:pb-3"
+            >
+              <p class="text-gray-400">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat,
+                repellat amet doloribus consequuntur eos similique provident
+                tempora voluptates iure quia fuga dicta voluptatibus culpa
+                mollitia recusandae delectus id suscipit labore?
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="newsletter" class="bg-softBlue">
+      <div class="container py-24 mx-auto max-w-xl text-center px-10">
+        <p class="tracking-widest uppercase text-white text-lg">
+          35,000+ ALREADY JOINED
+        </p>
+        <h2 class="font-semibold text-3xl md:text-4xl text-white mt-6">
+          Stay up-to-date with what we're doing
+        </h2>
+        <form
+          class="flex flex-col md:flex-row items-center space-y-4 md:space-y-0 mt-6 md:space-x-3 max-w-md md:px-[1.05rem] md:justify-center mx-auto"
+        >
+          <input
+            type="text"
+            class="px-6 py-2.5 text-base placeholder-gray-400 rounded-lg focus:outline-none md:flex-1"
+            placeholder="Enter your email address"
+          />
+          <button
+            class="bg-softRed px-6 font-semibold py-3 text-white hover:opacity-90 duration-300 capitalize rounded-lg"
+          >
+            Contact us
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <footer class="bg-veryDarkBlue">
+      <div class="container py-16 mx-auto md:px-6">
+        <div
+          class="flex flex-col md:flex-row md:justify-between items-center space-y-16 md:space-y-0"
+        >
+          <div
+            class="flex flex-col space-y-8 md:space-y-0 items-center md:flex-row md:space-x-14 md:items-start"
+          >
+            <div class="h-10 mb-[-0.7rem] inline-block">
+              <img
+                src="../../all-project-assets/bookmark/images/logo-bookmark-footer.svg"
+                alt="logo"
+              />
+            </div>
+            <a
+              href="#features"
+              class="uppercase text-grayishBlue hover:text-softRed text-lg"
+              >features</a
+            >
+            <a
+              href="#download"
+              class="uppercase text-grayishBlue hover:text-softRed text-lg"
+              >download</a
+            >
+            <a
+              href="#faq"
+              class="uppercase text-grayishBlue hover:text-softRed text-lg"
+              >faq</a
+            >
+          </div>
+
+          <div class="flex space-x-10">
+            <a href="#" class="ficon">
+              <img
+                src="../../all-project-assets/bookmark/images/icon-facebook.svg"
+                alt="fb"
+                class="h-6"
+              />
+            </a>
+            <a href="#" class="ficon">
+              <img
+                src="../../all-project-assets/bookmark/images/icon-twitter.svg"
+                alt="twitter"
+                class="h-6"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- <div class="py-96"></div> -->
+    <!-- <div class="py-96"></div> -->
+    <!-- <div class="py-96"></div>
+    <div class="py-96"></div>
+    <div class="py-96"></div>
+    <div class="py-96"></div>
+    <div class="py-96"></div>
+    <div class="py-96"></div>
+    <div class="py-96"></div>
+    <div class="py-96"></div> -->
+  </body>
+</html>

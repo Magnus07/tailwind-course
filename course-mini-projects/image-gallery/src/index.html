@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="../dist/output.css" />
+  </head>
+  <body>
+    <div class="flex items-center justify-center bg-cyan-50 min-h-screen">
+      <div class="bg-white p-6 m-3 space-y-10 shadow-2xl rounded-3xl md:p-40">
+        <div
+          class="flex flex-col md:flex-row justify-center items-center md:justify-end space-y-3 md:space-y-0 md:space-x-8"
+        >
+          <div class="group text-black">
+            <a href="#" class="text-md">Vector</a>
+            <div
+              class="border-t-2 mx-2 mt-2 duration-200 border-black opacity-0 group-hover:opacity-100"
+            ></div>
+          </div>
+          <div class="group text-black">
+            <a href="#" class="text-md">Illustrations</a>
+            <div
+              class="border-t-2 mx-2 mt-2 duration-200 border-black opacity-0 group-hover:opacity-100"
+            ></div>
+          </div>
+          <div class="group text-black">
+            <a href="#" class="text-md">Images</a>
+            <div
+              class="border-t-2 mx-2 mt-2 duration-200 border-black opacity-0 group-hover:opacity-100"
+            ></div>
+          </div>
+          <div class="group text-black">
+            <a href="#" class="text-md">Icons</a>
+            <div
+              class="border-t-2 mx-2 mt-2 duration-200 border-black opacity-0 group-hover:opacity-100"
+            ></div>
+          </div>
+        </div>
+
+        <!-- search box -->
+
+        <div
+          class="flex flex-col md:flex-row md:justify-between space-y-5 md:space-y-0 md:pt-14"
+        >
+          <div class="border-b-2 border-slate-100 flex flex-row">
+            <input
+              type="text"
+              placeholder="Search"
+              class="bg-white ml-6 focus:outline-none placeholder:text-slate-200 md:w-80"
+            />
+            <button>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-8 text-gray-300 duration-200 hover:scale-110"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <circle cx="10" cy="10" r="7" />
+                <line x1="21" y1="21" x2="15" y2="15" />
+              </svg>
+            </button>
+          </div>
+
+          <button
+            class="bg-black text-lg text-white py-3 font-normal rounded-md shadow-2xl px-14 border-black border hover:bg-white hover:text-black duration-200"
+          >
+            Upload
+          </button>
+        </div>
+
+        <!-- photo grid -->
+
+        <div
+          class="grid gap-4 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 mt-8"
+        >
+          <!-- image -->
+          <div class="group relative mx-auto">
+            <img
+              src="../../all-project-assets/image-gallery/images/image1.jpg"
+              alt="gallery image"
+              class="w-72"
+            />
+            <div
+              class="bg-black absolute bottom-0 left-0 opacity-0 group-hover:opacity-100 group-hover:bg-opacity-40 py-2 px-4 duration-500 w-full"
+            >
+              <div class="flex flex-row justify-between">
+                <div class="text-white text-sm">
+                  Abstract Painting
+                  <p class="text-xs text-white">245 likes - 35 Shares</p>
+                </div>
+                <img
+                  src="../../all-project-assets/image-gallery/images/bookmark.svg"
+                  alt="bookmark"
+                />
+              </div>
+            </div>
+          </div>
+          <!-- image -->
+          <div class="group relative mx-auto">
+            <img
+              src="../../all-project-assets/image-gallery/images/image2.jpg"
+              alt="gallery image"
+              class="w-72"
+            />
+            <div
+              class="bg-black absolute bottom-0 left-0 opacity-0 group-hover:opacity-100 group-hover:bg-opacity-40 py-2 px-4 duration-500 w-full"
+            >
+              <div class="flex flex-row justify-between">
+                <div class="text-white text-sm">
+                  Abstract Painting
+                  <p class="text-xs text-white">245 likes - 35 Shares</p>
+                </div>
+                <img
+                  src="../../all-project-assets/image-gallery/images/bookmark.svg"
+                  alt="bookmark"
+                />
+              </div>
+            </div>
+          </div>
+          <!-- image -->
+          <div class="group relative mx-auto">
+            <img
+              src="../../all-project-assets/image-gallery/images/image3.jpg"
+              alt="gallery image"
+              class="w-72"
+            />
+            <div
+              class="bg-black absolute bottom-0 left-0 opacity-0 group-hover:opacity-100 group-hover:bg-opacity-40 py-2 px-4 duration-500 w-full"
+            >
+              <div class="flex flex-row justify-between">
+                <div class="text-white text-sm">
+                  Abstract Painting
+                  <p class="text-xs text-white">245 likes - 35 Shares</p>
+                </div>
+                <img
+                  src="../../all-project-assets/image-gallery/images/bookmark.svg"
+                  alt="bookmark"
+                />
+              </div>
+            </div>
+          </div>
+          <!-- image -->
+          <div class="group relative mx-auto">
+            <img
+              src="../../all-project-assets/image-gallery/images/image4.jpg"
+              alt="gallery image"
+              class="w-72"
+            />
+            <div
+              class="bg-black absolute bottom-0 left-0 opacity-0 group-hover:opacity-100 group-hover:bg-opacity-40 py-2 px-4 duration-500 w-full"
+            >
+              <div class="flex flex-row justify-between">
+                <div class="text-white text-sm">
+                  Abstract Painting
+                  <p class="text-xs text-white">245 likes - 35 Shares</p>
+                </div>
+                <img
+                  src="../../all-project-assets/image-gallery/images/bookmark.svg"
+                  alt="bookmark"
+                />
+              </div>
+            </div>
+          </div>
+          <!-- image -->
+          <div class="group relative mx-auto">
+            <img
+              src="../../all-project-assets/image-gallery/images/image5.jpg"
+              alt="gallery image"
+              class="w-72"
+            />
+            <div
+              class="bg-black absolute bottom-0 left-0 opacity-0 group-hover:opacity-100 group-hover:bg-opacity-40 py-2 px-4 duration-500 w-full"
+            >
+              <div class="flex flex-row justify-between">
+                <div class="text-white text-sm">
+                  Abstract Painting
+                  <p class="text-xs text-white">245 likes - 35 Shares</p>
+                </div>
+                <img
+                  src="../../all-project-assets/image-gallery/images/bookmark.svg"
+                  alt="bookmark"
+                />
+              </div>
+            </div>
+          </div>
+          <!-- image -->
+          <div class="group relative mx-auto">
+            <img
+              src="../../all-project-assets/image-gallery/images/image6.jpg"
+              alt="gallery image"
+              class="w-72"
+            />
+            <div
+              class="bg-black absolute bottom-0 left-0 opacity-0 group-hover:opacity-100 group-hover:bg-opacity-40 py-2 px-4 duration-500 w-full"
+            >
+              <div class="flex flex-row justify-between">
+                <div class="text-white text-sm">
+                  Abstract Painting
+                  <p class="text-xs text-white">245 likes - 35 Shares</p>
+                </div>
+                <img
+                  src="../../all-project-assets/image-gallery/images/bookmark.svg"
+                  alt="bookmark"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
